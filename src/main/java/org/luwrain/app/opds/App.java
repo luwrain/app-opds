@@ -1,5 +1,5 @@
 /*
-   Copyright 2012-2021 Michael Pozhidaev <msp@luwrain.org>
+   Copyright 2012-2024 Michael Pozhidaev <msp@luwrain.org>
 
    This file is part of LUWRAIN.
 
@@ -31,7 +31,9 @@ import org.luwrain.controls.*;
 import org.luwrain.app.opds.Opds.Link;
 import org.luwrain.app.base.*;
 import org.luwrain.app.opds.Opds.Entry;
+import org.luwrain.core.annotations.*;
 
+@AppNoArgs(name = "opds", i18n = { "en=OPDS", "ru=Библиотеки"})
 public final class App extends AppBase<Strings>
 {
     static final Type LIBRARY_LIST_TYPE = new TypeToken<List<RemoteLibrary>>(){}.getType();
